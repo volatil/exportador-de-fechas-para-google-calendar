@@ -40,7 +40,6 @@ $("section.admin div.campo input#fechainicio").on("change", function () {
     fechainicio = new Date( fechainicio );
     fechainicio = fechainicio.getFullYear() + "-" + String(fechainicio.getMonth() + 1).padStart(2, "0") + "-" + String( fechainicio.getDate() ).padStart(2, "0") + "T" + String( fechainicio.getHours() ).padStart(2, "0") + ":" + String( fechainicio.getMinutes() ).padStart(2, "0");
     $("section.admin div.campo input#fechatermino").val( fechainicio );
-    console.warn( `cambie!: ${ fechainicio }` );
 });
 // CREA LA FECHA
 $("section.admin > button").on("click", function () {
